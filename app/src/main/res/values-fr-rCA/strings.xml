@@ -12,5 +12,12 @@
         <string name="checkbox">CheckBox</string>
         <string name="radiobutton">RadioButton</string>
         <string name="assignment2a">assignment2a</string>
+        <string name="photo">Take la Photo</string>
+        <string name="previous">précédent</string>
+        <string name="next">suivant</string>
+        <string name="home">foyer</string>
+        <string name="switch_on">L\'interrupteur est allumé</string>
+        <string name="switch_off">L\'interrupteur est éteint</string>
+        <string name="checkbox_message">Ceci est vérifié</string>
 
 </resources>

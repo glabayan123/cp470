@@ -11,5 +11,12 @@
     <string name="checkbox">CheckBox</string>
     <string name="radiobutton">RadioButton</string>
     <string name="assignment2a">assignment2a</string>
+    <string name="photo">Take a Photo</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="home">Home</string>
+    <string name="switch_on">Switch is on</string>
+    <string name="switch_off">switch is off</string>
+    <string name="checkbox_message">This is checked</string>
 
 </resources>

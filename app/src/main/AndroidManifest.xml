@@ -21,7 +21,9 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/assignment2a"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".LoginActivity" />
+
         <activity
             android:name=".LoginActivity"
             android:exported="true"
