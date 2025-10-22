@@ -30,6 +30,15 @@
 
 
     <Button
+        android:id="@+id/buttonTestToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Toolbar"
+        app:layout_constraintTop_toBottomOf="@id/buttonChat"
+        app:layout_constraintStart_toStartOf="@id/buttonChat"
+        app:layout_constraintEnd_toEndOf="@id/buttonChat"/>
+
+    <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

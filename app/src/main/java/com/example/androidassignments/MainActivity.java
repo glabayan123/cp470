@@ -11,6 +11,8 @@ import androidx.core.app.NavUtils;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.appcompat.widget.Toolbar;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,12 +33,19 @@ public class MainActivity extends AppCompatActivity {
         Button buttonNext = findViewById(R.id.buttonNext);
         Button buttonHome = findViewById(R.id.buttonHome);
         Button buttonChat = findViewById(R.id.buttonChat);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
 
         buttonPrevious.setOnClickListener(v -> NavUtils.navigateUpFromSameTask(MainActivity.this));
         buttonNext.setOnClickListener(v -> startActivityForResult(new Intent(MainActivity.this, ListItemsActivity.class), REQUEST_CODE_LIST));
         buttonHome.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, LoginActivity.class)));
         buttonChat.setOnClickListener(v-> startActivity(new Intent(MainActivity.this, ChatWindow.class)));
+
+        Button buttonTestToolbar = findViewById(R.id.buttonTestToolbar);
+        buttonTestToolbar.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, TestToolbar.class));
+        });
     }
 
     @Override

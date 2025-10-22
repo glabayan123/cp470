@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/instagram"
+        android:title="Instagram"
+        android:icon="@drawable/instagram"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/steam"
+        android:title="Steam"
+        android:icon="@drawable/steam"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/twitter"
+        android:title="Twitter"
+        android:icon="@drawable/twitter"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/about"
+        android:title="About"
+        app:showAsAction="never"/>
+</menu>

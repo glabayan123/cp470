@@ -25,4 +25,15 @@
         <string name="incomingmessage">message entrant</string>
         <string name="back">précédent</string>
         <string name="send">envoyer</string>
+        <string name="newmessage">newmessage</string>
+
+
+        <string name="default_snackbar_message">article 1 sélectionné</string>
+        <string name="fab_message">Bonjour, ceci est un message aleatoire</string>
+        <string name="dialog_back_title">Revenir?</string>
+        <string name="ok">Qui</string>
+        <string name="cancel">Non</string>
+        <string name="about_message">Version 2.4</string>
+        <string name="hint_new_message">nouveau message</string>
+
 </resources>
