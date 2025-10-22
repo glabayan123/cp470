@@ -30,10 +30,13 @@ public class MainActivity extends AppCompatActivity {
         Button buttonPrevious = findViewById(R.id.buttonPrevious);
         Button buttonNext = findViewById(R.id.buttonNext);
         Button buttonHome = findViewById(R.id.buttonHome);
+        Button buttonChat = findViewById(R.id.buttonChat);
+
 
         buttonPrevious.setOnClickListener(v -> NavUtils.navigateUpFromSameTask(MainActivity.this));
         buttonNext.setOnClickListener(v -> startActivityForResult(new Intent(MainActivity.this, ListItemsActivity.class), REQUEST_CODE_LIST));
         buttonHome.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, LoginActivity.class)));
+        buttonChat.setOnClickListener(v-> startActivity(new Intent(MainActivity.this, ChatWindow.class)));
     }
 
     @Override
@@ -44,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK && data != null) {
                 String messagePassed = data.getStringExtra("Response");
                 Log.i("MainActivity", "Data returned: " + messagePassed);
+                Intent intent = new Intent(MainActivity.this, ChatWindow.class);
+                startActivity(intent);
             }
         }
     }

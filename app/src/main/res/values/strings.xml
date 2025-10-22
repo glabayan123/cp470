@@ -18,5 +18,12 @@
     <string name="switch_on">Switch is on</string>
     <string name="switch_off">switch is off</string>
     <string name="checkbox_message">This is checked</string>
+    <string name="startchat">Start Chat</string>
+    <string name="typemessage">Type a message</string>
+    <string name="outgoingmessage">Outgoing message</string>
+    <string name="incomingmessage">Incoming message</string>
+    <string name="back">Back</string>
+    <string name="send">Send</string>
+
 
 </resources>

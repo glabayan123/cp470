@@ -19,5 +19,10 @@
         <string name="switch_on">L\'interrupteur est allumé</string>
         <string name="switch_off">L\'interrupteur est éteint</string>
         <string name="checkbox_message">Ceci est vérifié</string>
-
+        <string name="startchat">commencer à discuter</string>
+        <string name="typemessage">tape un message</string>
+        <string name="outgoingmessage">message sortant</string>
+        <string name="incomingmessage">message entrant</string>
+        <string name="back">précédent</string>
+        <string name="send">envoyer</string>
 </resources>

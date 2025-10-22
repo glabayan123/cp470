@@ -11,30 +11,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidAssignments">
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/assignment2a"
+            android:parentActivityName=".LoginActivity" />
+
         <activity
             android:name=".ListItemsActivity"
             android:exported="true"
             android:label="@string/title_activity_list_items"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.AndroidAssignments">
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/assignment2a"
-            android:exported="true"
-            android:parentActivityName=".LoginActivity" />
+            android:theme="@style/Theme.AndroidAssignments" />
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".ChatWindow"
             android:exported="true"
-            android:parentActivityName=".ListItemsActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:theme="@style/Theme.AndroidAssignments"
+            android:parentActivityName=".MainActivity" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-
-        </activity>
     </application>
 
 </manifest>
