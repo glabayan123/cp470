@@ -35,5 +35,8 @@
         <string name="cancel">Non</string>
         <string name="about_message">Version 2.4</string>
         <string name="hint_new_message">nouveau message</string>
-
+    <string name="maxtemp">maxtemp</string>
+        <string name="mintemp">mintemp</string>
+        <string name="currenttemp">currenttemp</string>
+        <string name="weather_icon">c\'est la weather</string>
 </resources>

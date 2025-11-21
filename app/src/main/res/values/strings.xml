@@ -34,8 +34,18 @@
     <string name="about_message">Version 2.4</string>
     <string name="hint_new_message">new message</string>
 
-
-
+    <string-array name="canadian_cities">
+        <item>ottawa</item>
+        <item>toronto</item>
+        <item>montreal</item>
+        <item>vancouver</item>
+        <item>calgary</item>
+        <item>edmonton</item>
+        <item>victoria</item>
+        <item>halifax</item>
+        <item>winnipeg</item>
+        <item>regina</item>
+    </string-array>
 
 
     <!-- Strings used for fragments for navigation -->
@@ -79,6 +89,10 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="newmessage">newmessage</string>
+    <string name="maxtemp">maxtemp</string>
+    <string name="mintemp">mintemp</string>
+    <string name="currenttemp">currenttemp</string>
+    <string name="weather_icon">this is the weather</string>
 
 
 </resources>

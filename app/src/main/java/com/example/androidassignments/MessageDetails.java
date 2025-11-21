@@ -1,26 +1,28 @@
-package com.example.androidassignments.ui.theme;
+package com.example.androidassignments;
 
 import android.os.Bundle;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-import com.example.androidassignments.R;
 
 public class MessageDetails extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_message_details);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        setContentView(R.layout.activity_message_detail);
+
+        long id = getIntent().getLongExtra("id", -1);
+        String text = getIntent().getStringExtra("text");
+
+        Bundle args = new Bundle();
+        args.putLong(MessageFragment.ARG_ID, id);
+        args.putString(MessageFragment.ARG_TEXT, text);
+
+        MessageFragment fragment = new MessageFragment();
+        fragment.setArguments(args);
+
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.messageDetailContainer, fragment)
+                .commit();
     }
 }

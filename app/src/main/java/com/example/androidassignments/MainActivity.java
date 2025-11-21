@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         Button buttonNext = findViewById(R.id.buttonNext);
         Button buttonHome = findViewById(R.id.buttonHome);
         Button buttonChat = findViewById(R.id.buttonChat);
+        Button buttonWeatherForecast = findViewById(R.id.buttonWeatherForecast);
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -41,12 +43,15 @@ public class MainActivity extends AppCompatActivity {
         buttonNext.setOnClickListener(v -> startActivityForResult(new Intent(MainActivity.this, ListItemsActivity.class), REQUEST_CODE_LIST));
         buttonHome.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, LoginActivity.class)));
         buttonChat.setOnClickListener(v-> startActivity(new Intent(MainActivity.this, ChatWindow.class)));
-
+        buttonWeatherForecast.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, WeatherForecast.class))
+        );
         Button buttonTestToolbar = findViewById(R.id.buttonTestToolbar);
         buttonTestToolbar.setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, TestToolbar.class));
         });
     }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

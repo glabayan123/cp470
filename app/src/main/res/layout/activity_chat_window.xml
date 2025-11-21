@@ -6,7 +6,6 @@
     tools:context=".ChatWindow"
     android:background="@android:color/white">
 
-    <!-- Header bar with back arrow -->
     <RelativeLayout
         android:id="@+id/headerBar"
         android:layout_width="match_parent"
@@ -36,7 +35,6 @@
             android:layout_centerInParent="true" />
     </RelativeLayout>
 
-    <!-- EditText for message input -->
     <EditText
         android:id="@+id/editTextMessage"
         android:layout_width="match_parent"
@@ -50,7 +48,6 @@
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="8dp" />
 
-    <!-- Send button at bottom right -->
     <Button
         android:id="@+id/buttonSend"
         android:layout_width="wrap_content"
@@ -64,7 +61,6 @@
         android:paddingBottom="8dp"
         android:layout_margin="8dp" />
 
-    <!-- ListView for chat messages -->
     <ListView
         android:id="@+id/listViewMessages"
         android:layout_width="match_parent"
